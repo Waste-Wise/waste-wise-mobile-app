@@ -1,5 +1,6 @@
 package com.example.wastewise
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -22,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
 
         }
 
-        // Click listener for the second card view
+
         binding.cardView2.setOnClickListener {
 
             val intent = Intent(this, NonDisposableActivity::class.java)

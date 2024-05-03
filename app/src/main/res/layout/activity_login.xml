@@ -29,7 +29,7 @@
         app:layout_constraintVertical_bias="0.638" />
 
     <EditText
-        android:id="@+id/username2"
+        android:id="@+id/password"
         android:layout_width="314dp"
         android:layout_height="59dp"
         android:layout_marginTop="10dp"
@@ -38,7 +38,7 @@
         android:drawablePadding="20dp"
         android:ems="10"
         android:hint=""
-        android:inputType="text"
+        android:inputType="textPassword"
         android:maxLines="1"
         android:padding="20dp"
         android:textColor="@color/white"
@@ -109,15 +109,15 @@
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
         android:backgroundTint="@color/green"
-        android:text="Login"
         android:fontFamily="@font/leaguespartanbold"
+        android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username2"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.72" />
 
     <TextView
         android:id="@+id/notRegisteredTV"
@@ -131,5 +131,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn"
         app:layout_constraintVertical_bias="0.215" />
+
+    <ImageView
+        android:id="@+id/show_pass_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visibility_on"
+        android:padding="10dp"
+        android:layout_marginEnd="10dp"
+        tools:ignore="OnClick"
+        android:onClick="ShowHidePass"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintTop_toTopOf="@id/password"
+        app:layout_constraintBottom_toBottomOf="@id/password"
+        app:tint="@color/green" />
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/show_pass_btn"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_constraintEnd_toEndOf="@+id/password"-->
+<!--        android:layout_constraintTop_toTopOf="@+id/password"-->
+<!--        android:alpha=".5"-->
+<!--        android:onClick="ShowHidePass"-->
+<!--        android:padding="5dp"-->
+<!--        android:src="@drawable/ic_visibility_on"-->
+<!--        tools:ignore="OnClick"-->
+<!--        tools:layout_editor_absoluteX="318dp"-->
+<!--        tools:layout_editor_absoluteY="541dp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

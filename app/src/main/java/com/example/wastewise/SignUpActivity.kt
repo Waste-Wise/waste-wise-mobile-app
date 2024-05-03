@@ -16,7 +16,7 @@ class SignUpActivity : AppCompatActivity() {
 
         binding.NextBtn.setOnClickListener {
 
-            val intent = Intent(this, UserRegisterForm::class.java)
+            val intent = Intent(this, OtpPageActivity::class.java)
             startActivity(intent)
         }
 

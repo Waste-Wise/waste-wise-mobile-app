@@ -76,7 +76,7 @@
                 android:layout_width="200dp"
                 android:layout_gravity="center"
                 android:layout_height="200dp"
-                android:src="@drawable/ecoidea" />
+                android:src="@drawable/ecohome" />
             <!-- Your content for the second card view goes here -->
 
         </androidx.cardview.widget.CardView>

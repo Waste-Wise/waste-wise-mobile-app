@@ -17,11 +17,13 @@ class NonDisposableActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var googleMap: GoogleMap
     private val locations = listOf(
-        LatLng(37.7749, -122.4194), // San Francisco
-        LatLng(37.7974, -122.4058), // Golden Gate Bridge
-        LatLng(37.8080, -122.4177), // Alcatraz Island
-        LatLng(37.7749, -122.4308), // Palace of Fine Arts
-        LatLng(37.8087, -122.4098)  // Fisherman's Wharf
+//        LatLng(37.7749, -122.4194), // San Francisco
+//        LatLng(37.7974, -122.4058), // Golden Gate Bridge
+//        LatLng(37.8080, -122.4177), // Alcatraz Island
+//        LatLng(37.7749, -122.4308), // Palace of Fine Arts
+//        LatLng(37.8087, -122.4098)  // Fisherman's Wharf
+        LatLng(6.0535, 80.2210), // Galle
+        LatLng(5.9480, 80.5350)
     )
     private val markers = mutableListOf<Marker>()
 

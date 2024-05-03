@@ -47,14 +47,21 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.022" />
 
-        <Button
-            android:id="@+id/generateRouteButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="Navigate" />
-
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/generateRouteButton"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/leaguespartanbold"
+        android:text="Navigate"
+        app:layout_constraintBottom_toBottomOf="@+id/mapFragment2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.917" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@ class HomeActivity : AppCompatActivity() {
 
         binding.cardView2.setOnClickListener {
 
-            val intent = Intent(this, NonDisposableActivity::class.java)
+            val intent = Intent(this, RoutesActivity::class.java)
             startActivity(intent)
         }
 

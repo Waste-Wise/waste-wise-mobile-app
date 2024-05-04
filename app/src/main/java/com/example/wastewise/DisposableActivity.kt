@@ -76,7 +76,13 @@ class DisposableActivity : AppCompatActivity(), OnMapReadyCallback {
             super.onLocationResult(locationResult)
             locationResult ?: return
             for (location in locationResult.locations) {
-                val latLng = LatLng(location.latitude, location.longitude)
+                val latitude = location.latitude
+                val longitude = location.longitude
+                // Call method to send location to API
+                //RestAPI().sendLocation(latitude, longitude)
+
+                // Update marker on the map
+                val latLng = LatLng(latitude, longitude)
                 if (!::currentLocationMarker.isInitialized) {
                     currentLocationMarker = mGoogleMap?.addMarker(MarkerOptions().position(latLng)
                         .title("Current Location"))!!
@@ -87,6 +93,19 @@ class DisposableActivity : AppCompatActivity(), OnMapReadyCallback {
             }
         }
     }
+//    private fun sendLocationToApi(latitude: Double, longitude: Double) {
+//        val restAPI = RestAPI()
+//        val isSuccess = restAPI.sendLocation(latitude, longitude)
+//
+//        if (isSuccess) {
+//            // Location sent successfully
+//            // Handle success if needed
+//        } else {
+//            // Location send failed
+//            // Handle failure if needed
+//        }
+//    }
+
 
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {

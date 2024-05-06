@@ -63,7 +63,8 @@ class RestAPI {
             email = decodedTokenJson.getString("email"),
             isVerified = decodedTokenJson.getBoolean("isVerified"),
             iat = decodedTokenJson.getLong("iat"),
-            exp = decodedTokenJson.getLong("exp")
+            exp = decodedTokenJson.getLong("exp"),
+            assignedVehicle = decodedTokenJson.getString("assignedVehicle")
         )
 
 

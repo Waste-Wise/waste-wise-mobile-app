@@ -7,6 +7,8 @@ data class TokenDecoded(
     val email: String,
     val isVerified: Boolean,
     val iat: Long,
-    val exp: Long
+    val exp: Long,
+    val assignedVehicle: String
+
 )
 

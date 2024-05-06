@@ -9,5 +9,6 @@ data class RoutesResponse(
 
 data class Route(
     @SerializedName("_id") val id: String,
-    @SerializedName("route_name") val routeName: String
+    @SerializedName("route_name") val routeName: String,
+    @SerializedName("route_distance") val routeDistance: String
 )
